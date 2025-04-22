@@ -1,0 +1,23 @@
+# Node dependencies (will cover both frontend/node_modules and backend/node_modules)
+node_modules/
+
+# Environment variables (can be redundant if also in backend/.gitignore, but good practice)
+.env
+frontend/.env*
+backend/.env*
+
+# Build output folders (adjust if your build outputs differ)
+frontend/dist
+backend/dist
+# Add other specific build outputs if necessary
+
+# Prisma
+backend/prisma/generated-client/ # Or wherever Prisma client is generated if not in node_modules
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
